@@ -1,9 +1,13 @@
 .footer {
   background-color: #0c0c0e;
   padding: 30px 0;
-  &__text {
-  }
+  display: flex;
+  justify-content: center;
 
-  &__text-white {
+  &__text {
+    @include font($grey, 14px, $font-montserrat, 600, -0.56px, 28px);
+    &_white {
+      color: white;
+    }
   }
 }

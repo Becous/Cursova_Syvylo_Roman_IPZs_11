@@ -11,3 +11,9 @@
   &__icon {
   }
 }
+
+@media (max-width: 375px) {
+  .platforms {
+    display: none;
+  }
+}

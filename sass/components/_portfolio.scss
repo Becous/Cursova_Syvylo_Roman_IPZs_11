@@ -43,3 +43,9 @@
 
 .slider-choice {
 }
+
+@media (max-width: 375px) {
+  .portfolio {
+    display: none;
+  }
+}

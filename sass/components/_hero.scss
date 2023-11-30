@@ -40,3 +40,9 @@
 }
 .container {
 }
+
+@media (max-width: 375px) {
+  .hero {
+    display: none;
+  }
+}
