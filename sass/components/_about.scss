@@ -1,15 +1,52 @@
 .about {
   background-color: white;
   padding: 90px 0 86px 0;
+  &__container {
+    display: flex;
+    gap: 63px;
+  }
   &__expirence {
   }
 
   &__expirence-img {
   }
 
+  &__expirence-box {
+    display: flex;
+    align-items: center;
+    &_right {
+      margin-bottom: 31px;
+      & .about__expirence-text {
+        margin-left: 12px;
+      }
+    }
+    &_left {
+      margin-top: 31px;
+      justify-content: end;
+      & .about__expirence-text {
+        margin-right: 12px;
+      }
+    }
+  }
+
   &__expirence-year {
+    @include font($main-color, 64px, $font-anton, 400, 1.28px);
+    text-transform: uppercase;
+    font-style: normal;
   }
 
   &__expirence-text {
+    @include font($black, 14px, $font-montserrat, 600, -0.56px, 20px);
+  }
+
+  &__title {
+  }
+
+  &__text {
+    @include font($grey, 14px, $font-montserrat, 500, 1.6px, 32px);
+    padding-left: 92px;
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
   }
 }

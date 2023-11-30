@@ -60,6 +60,35 @@ img {
   color: transparent;
 }
 
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title__number {
+  color: #fe390c;
+  font-size: 80px;
+  font-family: "Anton", fantasy;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  word-wrap: break-word;
+}
+.title__title {
+  color: #111214;
+  font-size: 40px;
+  font-family: "Anton", fantasy;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  margin-left: 24px;
+}
+
 .header {
   width: 100%;
   background-color: #111214;
@@ -184,6 +213,69 @@ img {
   background-color: white;
   padding: 90px 0 86px 0;
 }
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 63px;
+}
+.about__expirence-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__expirence-box_right {
+  margin-bottom: 31px;
+}
+.about__expirence-box_right .about__expirence-text {
+  margin-left: 12px;
+}
+.about__expirence-box_left {
+  margin-top: 31px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.about__expirence-box_left .about__expirence-text {
+  margin-right: 12px;
+}
+.about__expirence-year {
+  color: #fe390c;
+  font-size: 64px;
+  font-family: "Anton", fantasy;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.about__expirence-text {
+  color: #111214;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+  word-wrap: break-word;
+}
+.about__text {
+  color: #a9a9aa;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1.6px;
+  word-wrap: break-word;
+  padding-left: 92px;
+}
+.about__text:not(:first-child) {
+  margin-top: 15px;
+}
+
 .platforms {
   background-color: #f7f7f7;
   padding: 92px 0 190px 0;

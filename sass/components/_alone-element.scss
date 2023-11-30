@@ -12,12 +12,15 @@
 }
 
 .title {
+  display: flex;
+  align-items: center;
   &__number {
+    @include font($main-color, 80px, $font-anton, 400, 0.8px);
   }
 
   &__title {
-  }
-
-  &__text {
+    @include font($black, 40px, $font-anton, 400, 1.6px);
+    text-transform: uppercase;
+    margin-left: 24px;
   }
 }
