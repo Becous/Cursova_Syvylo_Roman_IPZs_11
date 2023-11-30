@@ -4,9 +4,345 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <title>Robert Fox Portfolio</title>
   </head>
   <body>
-    <script src="js/script.js"></script>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__body">
+          <div class="logo header__logo">
+            <span>F</span><span class="logo__gray">O</span><span class="logo__gradient">X</span>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item header__item_active">Home</li>
+              <li class="header__item">About</li>
+              <li class="header__item">Service</li>
+              <li class="header__item">Portfolio</li>
+            </ul>
+          </nav>
+          <button class="header__button" type="button">Contact</button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__title">
+            <ul class="hero__list">
+              <li class="hero__items">
+                <p class="hero__text hero__text-orange">Hello,</p>
+                <p class="hero__text hero__text-white">i'm</p>
+              </li>
+              <li class="hero__items">
+                <h1 class="hero__text hero__text-main">Robert Fox</h1>
+              </li>
+              <li class="hero__items">
+                <p class="hero__text hero__text-little">Profesional Product designer</p>
+              </li>
+            </ul>
+            <button class="hero__button" type="button">Let's talk</button>
+          </div>
+          <ul class="social__list">
+              <li class="social__item">
+                  <a class="social__link" href="https://instagram.com" rel="nofollow">
+                      <svg class="social__icon" width="20" height="20">
+                          <use href="">
+                      </svg>
+                  </a>
+              </li>
+              <li class="social__item">
+                  <a class="social__link" href="https://instagram.com" rel="nofollow">
+                      <svg class="icon_social" width="20" height="20">
+                          <use href="">
+                      </svg>
+                  </a>
+              </li>
+              <li class="social__item">
+                  <a class="social__link" href="https://instagram.com" rel="nofollow">
+                      <svg class="social__icon" width="20" height="20">
+                          <use href="">
+                      </svg>
+                  </a>
+              </li>
+              <li class="social__item">
+                  <a class="social__link" href="https://instagram.com"  rel="nofollow">
+                      <svg class="social__icon" width="20" height="20">
+                          <use href="">
+                      </svg>
+                  </a>
+              </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about">
+        <div class="container">
+          <div class="title">
+            <h2 class="title__number">01 <span class="title__title">About me</span></h2>
+          </div>
+          <p class="about__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <p class="about__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit.
+          </p>
+          <div class="about__expirence">
+            <img src="./img/Image (3).jpg" alt="" class="about__expirence-img" width="230" height="257" />
+            <p class="about__expirence-year">8</p>
+            <p class="about__expirence-text">Year of experience</p>
+          </div>
+          <div class="about__expirence">
+            <img src="./img/Image (4).jpg" alt="" class="about__expirence-img" width="230" height="257" />
+            <p class="about__expirence-year">25</p>
+            <p class="about__expirence-text">Saticfied Customers</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platforms -->
+      <section class="platforms">
+        <div class="container">
+          <ul class="platforms__list">
+            <li class="platforms__item">
+              <svg class="platforms__icon" width="113" height="28">
+                <use href="./img/svg/behance.svg">
+              </svg>
+            </li>
+            <li class="platforms__item">
+              <svg class="platforms__icon" width="113" height="28">
+                <use href="./img/svg/slack.svg">
+              </svg>
+            </li>
+            <li class="platforms__item">
+              <svg class="platforms__icon" width="113" height="28">
+                <use href="./img/svg/dribbble.svg">
+              </svg>
+            </li>
+            <li class="platforms__item">
+              <svg class="platforms__icon" width="113" height="28">
+                <use href="./img/svg/twilio.svg">
+              </svg>
+            </li>
+            <li class="platforms__item">
+              <svg class="platforms__icon" width="113" height="28">
+                <use href="./img/svg/github.svg">
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Download -->
+
+      <!-- Service -->
+      <section class="service">
+        <div class="container">
+          <div class="title">
+            <h2 class="title__number">02<span class="title__title">My service</span></h2>
+          </div>
+          <ul class="service__list">
+            <li class="service__item">
+              <svg class="service__icon" width="32" height="33">
+                <use href="./img/svg/Edit Square.svg">
+              </svg>
+              <h3 class="service__title">UI/UX Design</h3>
+              <p class="service__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Vuis enim velit ullamco</p>
+            </li>
+            <li class="service__item">
+              <svg class="service__icon" width="32" height="33">
+                <use href="./img/svg/Category.svg">
+              </svg>
+              <h3 class="service__title">Product Design</h3>
+              <p class="service__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Vuis enim velit ullamco</p>
+            </li>
+            <li class="service__item">
+              <svg class="service__icon" width="32" height="33">
+                <use href="./img/svg/Chart.svg">
+              </svg>
+              <h3 class="service__title">Brand Identity</h3>
+              <p class="service__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Vuis enim velit ullamco</p>
+            </li>
+            <li class="service__item service__item-active">
+              <svg class="service__icon" width="32" height="33">
+                <use href="./img/svg/Activity.svg">
+              </svg>
+              <h3 class="service__title">Website Design</h3>
+              <p class="service__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Vuis enim velit ullamco</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio">
+        <div class="container">
+          <div class="portfolio__nav">
+            <div class="title">
+              <h2 class="title__number">03<span class="title__title">portfolio</span></h2>
+            </div>
+            <ul class="filtrated-box__list">
+              <li class="filtrated-box__item"><button class="filtrated-box__button">All</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button">ui/ux design</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button">PRODUCT DESIGN</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button">BRANDING</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button">WEB DESIGN</button></li>
+            </ul>
+            <div class="move-box">
+              <button class="move-box__button">
+                <svg>
+                  <use href="./img/svg/Arrow - Down (1).svg">
+                </svg>
+              </button>
+              <button class="move-box__button">
+                <svg>
+                  <use href="./img/svg/Arrow - Down.svg">
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio__slider-box">
+            <ul class="image-box__list">
+              <li class="image-box__item">
+                <img src="./img/Image (5).jpg" alt="" class="image-box__img">
+                <div class="overlay">
+                  <h3 class="overlay__title">MOBILE DESIGN</h3>
+                  <p class="overlay__text">UI/UX Design</p>
+                </div>
+              </li>
+              <li class="image-box__item">
+                <img src="./img/Image (5).jpg" alt="" class="image-box__img">
+                <div class="overlay">
+                  <h3 class="overlay__title">MOBILE DESIGN</h3>
+                  <p class="overlay__text">UI/UX Design</p>
+                </div>
+              </li>
+              <li class="image-box__item">
+                <img src="./img/Image (5).jpg" alt="" class="image-box__img">
+                <div class="overlay">
+                  <h3 class="overlay__title">MOBILE DESIGN</h3>
+                  <p class="overlay__text">UI/UX Design</p>
+                </div>
+              </li>
+            </ul>
+            <div class="portfolio__slider">
+              <button class="slider-choice"></button>
+              <button class="slider-choice"></button>
+              <button class="slider-choice"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial -->
+      <section class="testimonial">
+        <div class="container">
+          <img src="./img/Image (8).jpg" alt="man" class="testimonial__img">
+          <div class="title">
+            <h2 class="title__number">04<span class="title__tile">testimonial</span></h2>
+          </div>
+          <div class="quote-box">
+            <svg class="quote-box__icon">
+              <use href="./img/svg/Quote Icon.svg">
+            </svg>
+            <p class="quote-box__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <p class="quote-box__author">Esther Howard</p>
+            <p class="quote-box__author-position">CEO of Adebe</p>
+            <div class="quote-box__slider-box">
+              <button class="quote-box__choice"></button>
+              <button class="quote-box__choice"></button>
+              <button class="quote-box__choice"></button>
+            </div>
+          </div>
+            <div class="move-box">
+              <button class="move-box__button">
+                <svg>
+                  <use href="./img/svg/Arrow - Down (1).svg">
+                </svg>
+              </button>
+              <button class="move-box__button">
+                <svg>
+                  <use href="./img/svg/Arrow - Down.svg">
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact">
+        <div class="container">
+          <address class="address-box">
+            <div class="title">
+              <h2 class="title__number">05<span class="title__title">Contact</span></h2>
+            </div>
+            <ul class="address-box__list">
+              <li class="address-box__item">
+                <svg>
+                  <use></use>
+                </svg>
+                <p class="address-box__title">Phone</p>
+                <p class="address-box__text">(219) 555-0114</p>
+              </li>
+              <li class="address-box__item">
+                <svg>
+                  <use></use>
+                </svg>
+                <p class="address-box__title">Email</p>
+                <p class="address-box__text">robertfox@example.com</p>
+              </li>
+              <li class="address-box__item">
+                <svg>
+                  <use></use>
+                </svg>
+                <p class="address-box__title">Address</p>
+                <p class="address-box__text">4517 Washington Ave. Manchester, Kentucky 39495</p>
+              </li>
+            </ul>
+          </address>
+          <div class="contact__form-box">
+            <h3 class="contact__form-title">I’m always open to discussing <span class="contact__form-title-orange">product design work</span> or partnership </h3>
+            <hr>
+            <form action="" class="form-contact">
+              <ul class="form-contact__list">
+                <li class="form-contact__item">
+                  <label for="name" class="form-contact__label">Your name*</label>
+                  <input name="name" type="text">
+                </li>
+                <li class="form-contact__item">
+                  <label for="email" class="form-contact__label">Email Address*</label>
+                  <input name="email" type="email">
+                </li>
+                <li class="form-contact__item">
+                  <label for="message" class="form-contact__label">Message</label>
+                  <textarea name="message" type="text"></textarea>
+                </li>
+              </ul>
+              <button type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Fotter -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">Copyright <p class="footer__text-white">Banana Studio</p> 2022 All Right Reserved</p>
+      </div>
+    </footer>
   </body>
+
 </html>

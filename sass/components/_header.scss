@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  background-color: $black;
+
+  &__container {
+    padding: 25px 150px;
+  }
+
+  &__button {
+    padding: 12px 16px;
+    background-color: transparent;
+    border: 1px $main-color solid;
+    border-radius: 4px;
+    @include font($main-color, 12px, $font-montserrat, 600, normal);
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    height: 40px;
+  }
+  &__menu {
+    align-self: center;
+  }
+  &__burger {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+  }
+
+  &__item {
+    @include font($grey, 12px, $font-montserrat, 600, normal);
+    &_active {
+      color: $main-color;
+    }
+  }
+}

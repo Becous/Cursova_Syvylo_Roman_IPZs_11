@@ -1,0 +1,42 @@
+.hero {
+  height: calc(840px - 88px);
+  display: flex;
+  background-color: $black;
+  &__container {
+  }
+
+  &__title {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__items {
+    box-sizing: border-box;
+  }
+
+  &__text {
+    @include font(white, 24px, $font-montserrat, 700, -0.96px, 30px);
+    &-white {
+    }
+
+    &-orange {
+      color: $main-color;
+    }
+    &-little {
+    }
+
+    &-main {
+      font-style: normal;
+      @include font(white, 130px, $font-anton, 400, 1.95px, 154px);
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    @include button;
+  }
+}
+.container {
+}

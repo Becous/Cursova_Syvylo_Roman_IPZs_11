@@ -1,0 +1,23 @@
+.logo {
+  @include font(white, 28px, $font-anton, 400, 0.42px);
+  &__gray {
+    color: #ffffff85;
+  }
+
+  &__gradient {
+    background-image: linear-gradient(to bottom, #fe390c, #521b0e); /* Градієнт */
+    -webkit-background-clip: text; /* Використовуємо текст як маску */
+    color: transparent;
+  }
+}
+
+.title {
+  &__number {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+}
