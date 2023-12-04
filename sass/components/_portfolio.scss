@@ -2,46 +2,109 @@
   padding: 73px 0;
   background-color: $grey10;
   &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-
-  &__slider-box {
-  }
-
   &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
   }
-}
-.container {
+
+  &__slider-button {
+    cursor: pointer;
+    height: 3px;
+    border-radius: 3px;
+    width: 53px;
+    border: none;
+    background-color: #e0e0e0;
+    transition: background-color 0.5s;
+    &:focus,
+    &:hover {
+      background-color: $main-color;
+    }
+    &_active {
+      background-color: $main-color;
+    }
+  }
 }
 .filtrated-box {
   &__list {
+    display: flex;
+    gap: 24px;
   }
-
-  &__item {
-  }
-
   &__button {
+    cursor: pointer;
+    display: block;
+    @include font($grey, 12px, $font-montserrat, 600, normal);
+    white-space: nowrap;
+    background-color: transparent;
+    border: transparent 1px solid;
+    transition: border 0.5s, color 0.5s;
+
+    padding: 16px;
+    &:focus,
+    &:hover {
+      color: $main-color;
+      border-radius: 4px;
+      border: $main-color 1px solid;
+    }
+    &_active {
+      color: $main-color;
+      border-radius: 4px;
+      border: $main-color 1px solid;
+    }
   }
 }
 .move-box {
+  display: flex;
+  gap: 24px;
   &__button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: $main-color;
+    border: none;
   }
 }
 .image-box {
+  cursor: pointer;
+  display: flex;
+  gap: 24px;
+  padding: 40px 0 63px;
   &__item {
-  }
-
-  &__img {
+    position: relative;
+    &:focus,
+    &:hover {
+      & .overlay {
+        opacity: 100%;
+      }
+    }
   }
 }
 .overlay {
+  opacity: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000096;
+  transition: opacity 0.5s;
   &__title {
+    @include font(white, 32px, $font-anton, 400, normal);
+    text-transform: capitalize;
   }
 
   &__text {
+    @include font(white, 16px, $font-montserrat, 700, -0.64px, 30px);
   }
-}
-
-.slider-choice {
 }
 
 @media (max-width: 375px) {

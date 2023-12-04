@@ -156,7 +156,7 @@
       <section class="service">
         <div class="container">
           <div class="title">
-            <h2 class="title__number">02<span class="title__title">My service</span></h2>
+            <h2 class="title__number">02</h2><span class="title__title">My service</span>
           </div>
           <ul class="service__list">
             <li class="service__item">
@@ -196,10 +196,10 @@
         <div class="container">
           <div class="portfolio__nav">
             <div class="title">
-              <h2 class="title__number">03<span class="title__title">portfolio</span></h2>
+              <h2 class="title__number">03</h2><span class="title__title">portfolio</span>
             </div>
             <ul class="filtrated-box__list">
-              <li class="filtrated-box__item"><button class="filtrated-box__button">All</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button filtrated-box__button_active">All</button></li>
               <li class="filtrated-box__item"><button class="filtrated-box__button">ui/ux design</button></li>
               <li class="filtrated-box__item"><button class="filtrated-box__button">PRODUCT DESIGN</button></li>
               <li class="filtrated-box__item"><button class="filtrated-box__button">BRANDING</button></li>
@@ -207,46 +207,44 @@
             </ul>
             <div class="move-box">
               <button class="move-box__button">
-                <svg>
+                <svg class="move-box__icon" width="20" height="20">
                   <use href="./img/svg/Arrow - Down (1).svg">
                 </svg>
               </button>
               <button class="move-box__button">
-                <svg>
+                <svg class="move-box__icon" width="20" height="20">
                   <use href="./img/svg/Arrow - Down.svg">
                 </svg>
               </button>
             </div>
           </div>
-          <div class="portfolio__slider-box">
-            <ul class="image-box__list">
-              <li class="image-box__item">
-                <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
-                <div class="overlay">
-                  <h3 class="overlay__title">MOBILE DESIGN</h3>
-                  <p class="overlay__text">UI/UX Design</p>
-                </div>
-              </li>
-              <li class="image-box__item">
-                <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
-                <div class="overlay">
-                  <h3 class="overlay__title">MOBILE DESIGN</h3>
-                  <p class="overlay__text">UI/UX Design</p>
-                </div>
-              </li>
-              <li class="image-box__item">
-                <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
-                <div class="overlay">
-                  <h3 class="overlay__title">MOBILE DESIGN</h3>
-                  <p class="overlay__text">UI/UX Design</p>
-                </div>
-              </li>
-            </ul>
-            <div class="portfolio__slider">
-              <button class="slider-choice"></button>
-              <button class="slider-choice"></button>
-              <button class="slider-choice"></button>
-            </div>
+          <ul class="image-box">
+            <li class="image-box__item">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+            <li class="image-box__item">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+            <li class="image-box__item">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+          </ul>
+          <div class="portfolio__slider">
+            <button class="portfolio__slider-button portfolio__slider-button_active"></button>
+            <button class="portfolio__slider-button"></button>
+            <button class="portfolio__slider-button"></button>
           </div>
         </div>
       </section>

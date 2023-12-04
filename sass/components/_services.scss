@@ -1,7 +1,6 @@
 .service {
   & .title {
-    display: block;
-    text-align: center;
+    justify-content: center;
   }
   padding: 300px 0 84px 0;
   &__list {
@@ -15,6 +14,7 @@
     flex-direction: column;
     padding: 39px 31px 31px 20px;
     background-color: $grey10;
+    transition: background-color 0.5s, color 0.5s;
 
     &:focus,
     &:hover {
@@ -49,9 +49,6 @@
     margin-top: 8px;
     @include font($grey, 14px, $font-montserrat, 500, -0.28px, 24px);
     font-style: normal;
-  }
-
-  &__item-active {
   }
 }
 
