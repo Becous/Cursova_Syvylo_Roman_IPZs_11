@@ -295,54 +295,60 @@
 
       <!-- Contact -->
       <section class="contact">
-        <div class="container">
+        <div class="container container__contact">
           <address class="address-box">
             <div class="title">
-              <h2 class="title__number">05<span class="title__title">Contact</span></h2>
+              <h2 class="title__number">05</h2><span class="title__title title__contact">Contact</span>
             </div>
             <ul class="address-box__list">
               <li class="address-box__item">
-                <svg>
+                <svg class="address-box__icon" width="24" height="24">
                   <use></use>
                 </svg>
-                <p class="address-box__title">Phone</p>
-                <p class="address-box__text">(219) 555-0114</p>
+                <div class="address-box__text-box">
+                  <p class="address-box__title">Phone</p>
+                  <p class="address-box__text">(219) 555-0114</p>
+                </div>
               </li>
               <li class="address-box__item">
-                <svg>
+                <svg class="address-box__icon" width="24" height="24">
                   <use></use>
                 </svg>
-                <p class="address-box__title">Email</p>
-                <p class="address-box__text">robertfox@example.com</p>
-              </li>
+                   <div class="address-box__text-box">
+                    <p class="address-box__title">Email</p>
+                    <p class="address-box__text">robertfox@example.com</p>
+                  </div>
+                </li>
               <li class="address-box__item">
-                <svg>
+                <svg class="address-box__icon" width="24" height="24">
                   <use></use>
                 </svg>
-                <p class="address-box__title">Address</p>
-                <p class="address-box__text">4517 Washington Ave. Manchester, Kentucky 39495</p>
-              </li>
+                   <div class="address-box__text-box">
+                    <p class="address-box__title">Address</p>
+                    <p class="address-box__text">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                  </div>
+                </li>
             </ul>
           </address>
           <div class="contact__form-box">
-            <h3 class="contact__form-title">I’m always open to discussing <span class="contact__form-title-orange">product design work</span> or partnership </h3>
-            <hr>
+            <h3 class="contact__form-title">I’m always open to discussing <span class="contact__form-title_orange">product design work</span> or partnership </h3>
+            <hr class="contact__line">
             <form action="" class="form-contact">
               <ul class="form-contact__list">
                 <li class="form-contact__item">
                   <label for="name" class="form-contact__label">Your name*</label>
-                  <input name="name" type="text">
+                  <input name="name" class="form-contact__input" type="text">
                 </li>
                 <li class="form-contact__item">
                   <label for="email" class="form-contact__label">Email Address*</label>
-                  <input name="email" type="email">
+                  <input name="email" class="form-contact__input" type="email">
                 </li>
                 <li class="form-contact__item">
                   <label for="message" class="form-contact__label">Message</label>
-                  <textarea name="message" type="text"></textarea>
+                  <textarea name="message" class="form-contact__textarea" type="text"></textarea>
                 </li>
               </ul>
-              <button type="submit">Send message</button>
+              <button class="form-contact__button" type="submit">Send message</button>
             </form>
           </div>
         </div>
