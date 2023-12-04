@@ -39,6 +39,7 @@
     cursor: pointer;
     display: block;
     @include font($grey, 12px, $font-montserrat, 600, normal);
+    text-transform: uppercase;
     white-space: nowrap;
     background-color: transparent;
     border: transparent 1px solid;
@@ -56,17 +57,6 @@
       border-radius: 4px;
       border: $main-color 1px solid;
     }
-  }
-}
-.move-box {
-  display: flex;
-  gap: 24px;
-  &__button {
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 2px;
-    background-color: $main-color;
-    border: none;
   }
 }
 .image-box {

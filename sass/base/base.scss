@@ -2,6 +2,9 @@
   max-width: 1140px;
   padding: 0 150px;
   margin: 0 auto;
+  &__testimonial {
+    display: flex;
+  }
 }
 
 .header {

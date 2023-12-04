@@ -1,3 +1,4 @@
+//Як не дивно лого, лул
 .logo {
   @include font(white, 28px, $font-anton, 400, 0.42px);
   &__gray {
@@ -11,6 +12,7 @@
   }
 }
 
+//Заголовки до секцій
 .title {
   display: flex;
   align-items: center;
@@ -22,5 +24,18 @@
     @include font($black, 40px, $font-anton, 400, 1.6px);
     text-transform: uppercase;
     margin-left: 24px;
+  }
+}
+
+//Кнопочки які пересувають слайдери
+.move-box {
+  display: flex;
+  gap: 24px;
+  &__button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: $main-color;
+    border: none;
   }
 }
