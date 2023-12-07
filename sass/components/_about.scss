@@ -1,6 +1,8 @@
 .about {
   background-color: white;
   padding: 90px 0 86px 0;
+  position: relative;
+  z-index: 3;
   &__container {
     display: flex;
     gap: 63px;

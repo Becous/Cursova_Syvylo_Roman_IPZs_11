@@ -7,7 +7,7 @@
 
   &__gradient {
     background-image: linear-gradient(to bottom, #fe390c, #521b0e); /* Градієнт */
-    -webkit-background-clip: text; /* Використовуємо текст як маску */
+    background-clip: text; /* Використовуємо текст як маску */
     color: transparent;
   }
 }
@@ -45,5 +45,22 @@
     &_right {
       transform: rotate(180deg);
     }
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  z-index: 2;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 42px;
+    height: 42px;
   }
 }

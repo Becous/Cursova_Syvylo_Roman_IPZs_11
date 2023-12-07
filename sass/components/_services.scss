@@ -26,12 +26,15 @@
       & .service__text {
         color: $grey-active;
       }
+      & .service__icon {
+        color: white;
+      }
     }
   }
 
   &__icon {
     margin-bottom: 24px;
-    fill: $main-color;
+    color: $main-color;
   }
 
   &__title {

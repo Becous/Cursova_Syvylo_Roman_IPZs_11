@@ -19,12 +19,12 @@
             <span></span>
           </div>
           <nav class="header__menu">
-            <ul class="header__list">
-              <li class="header__item header__item_active">Home</li>
-              <li class="header__item">About</li>
-              <li class="header__item">Service</li>
-              <li class="header__item">Portfolio</li>
-            </ul>
+            <div class="header__list">
+              <a class="header__item header__item_active" href="#">Home</a>
+              <a class="header__item" href="#">About</a>
+              <a class="header__item" href="#">Service</a>
+              <a class="header__item" href="#">Portfolio</a>
+            </div>
           </nav>
           <button class="header__button" type="button">Contact</button>
         </div>
@@ -37,21 +37,17 @@
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__title">
-            <ul class="hero__list">
-              <li class="hero__items">
+            <div class="hero__list">
+              <div class="hero__items">
                 <p class="hero__text hero__text-orange">Hello,</p>
                 <p class="hero__text hero__text-white">i'm</p>
-              </li>
-              <li class="hero__items">
-                <h1 class="hero__text hero__text-main">Robert Fox</h1>
-              </li>
-              <li class="hero__items">
-                <p class="hero__text hero__text-little">Profesional Product designer</p>
-              </li>
-            </ul>
+              </div>
+              <h1 class="hero__text hero__text-main">Robert Fox</h1>
+              <p class="hero__text hero__text-little">Profesional Product designer</p>
+            </div>
             <button class="hero__button" type="button">Let's talk</button>
           </div>
-          <ul class="social__list">
+          <ul class="social">
               <li class="social__item">
                   <a class="social__link" href="https://instagram.com" rel="nofollow">
                       <svg class="social__icon" width="20" height="20">
@@ -61,7 +57,7 @@
               </li>
               <li class="social__item">
                   <a class="social__link" href="https://instagram.com" rel="nofollow">
-                      <svg class="icon_social" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                           <use href="./img/svg/icon.svg#meta">
                       </svg>
                   </a>
@@ -81,6 +77,8 @@
                   </a>
               </li>
           </ul>
+          <img class="hero__img" src="./img/man1.png" width="550" height="757" alt="">
+          <div class="hero__gradient"></div>
         </div>
       </section>
 

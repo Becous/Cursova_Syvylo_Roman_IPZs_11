@@ -1,8 +1,10 @@
 .header {
   width: 100%;
   background-color: $black;
+  padding: 25px 0;
 
   &__button {
+    cursor: pointer;
     padding: 12px 16px;
     background-color: transparent;
     border: 1px $main-color solid;
@@ -13,8 +15,6 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    position: relative;
-    height: 40px;
   }
   &__menu {
     align-self: center;
@@ -29,7 +29,10 @@
   }
 
   &__item {
+    cursor: pointer;
     @include font($grey, 12px, $font-montserrat, 600, normal);
+    &:focus,
+    &:hover,
     &_active {
       color: $main-color;
     }

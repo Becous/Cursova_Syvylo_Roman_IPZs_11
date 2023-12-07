@@ -1,7 +1,7 @@
 .download {
   position: absolute;
   left: 150px;
-  top: 195px;
+  top: 190px;
 
   &__container {
     display: flex;
@@ -28,10 +28,6 @@
     gap: 8px;
     align-items: center;
   }
-
-  &__icon {
-  }
-
   &__text {
     @include font($grey, 14px, $font-montserrat, 600, -0.56px, 20px);
   }
