@@ -121,6 +121,10 @@ img {
   background-color: #fe390c;
   border: none;
 }
+.move-box__icon_right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 
 .header {
   width: 100%;
@@ -328,7 +332,28 @@ img {
 .platforms {
   background-color: #f7f7f7;
   padding: 92px 0 190px 0;
+  position: relative;
 }
+.platforms__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 90px;
+}
+.platforms__icon {
+  cursor: pointer;
+}
+.platforms__icon:hover, .platforms__icon:focus {
+  -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
 @media (max-width: 375px) {
   .platforms {
     display: none;
@@ -761,6 +786,7 @@ img {
   height: 124px;
   padding: 16px;
   background: rgba(202, 205, 209, 0.1);
+  resize: none;
 }
 .form-contact__button {
   padding: 16px 24px;
