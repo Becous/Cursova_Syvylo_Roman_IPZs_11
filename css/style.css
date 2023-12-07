@@ -359,6 +359,75 @@ img {
     display: none;
   }
 }
+.download {
+  position: absolute;
+  left: 150px;
+  top: 195px;
+}
+.download__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #111214;
+  padding: 73px 214px 79px 245px;
+  border-radius: 2px;
+}
+.download__title {
+  color: white;
+  font-size: 40px;
+  font-family: "Anton", fantasy;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  word-wrap: break-word;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+.download__button {
+  padding: 16px 24px;
+  border-radius: 4px;
+  background-color: #fe390c;
+  border: none;
+  font-style: normal;
+  color: white;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  word-wrap: break-word;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+.download__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.download__text {
+  color: #a9a9aa;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+  word-wrap: break-word;
+}
+
 .service {
   padding: 300px 0 84px 0;
 }

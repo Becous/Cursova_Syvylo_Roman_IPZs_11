@@ -1,0 +1,38 @@
+.download {
+  position: absolute;
+  left: 150px;
+  top: 195px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $black;
+    padding: 73px 214px 79px 245px;
+    border-radius: 2px;
+  }
+  &__title {
+    @include font(white, 40px, $font-anton, 400, 0.8px);
+    text-transform: capitalize;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    @include button;
+    margin-bottom: 24px;
+  }
+
+  &__text-box {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__icon {
+  }
+
+  &__text {
+    @include font($grey, 14px, $font-montserrat, 600, -0.56px, 20px);
+  }
+}
