@@ -215,7 +215,7 @@ img {
   }
 }
 .hero {
-  background-image: url("../../img/Background.png");
+  background-image: url("../img/Background.png");
   padding: 200px 0 228px;
   position: relative;
 }
