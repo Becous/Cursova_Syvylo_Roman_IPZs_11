@@ -215,7 +215,7 @@ img {
   }
 }
 .hero {
-  background-color: #111214;
+  background-image: url("../../img/Background.png");
   padding: 200px 0 228px;
   position: relative;
 }
@@ -236,7 +236,7 @@ img {
 .hero__img {
   position: absolute;
   left: 42%;
-  top: -20px;
+  bottom: 0;
   z-index: 1;
 }
 .hero__gradient {
@@ -396,7 +396,6 @@ img {
 .platforms {
   background-color: #f7f7f7;
   padding: 92px 0 190px 0;
-  position: relative;
 }
 .platforms__list {
   display: -webkit-box;
@@ -424,11 +423,14 @@ img {
   }
 }
 .download {
-  position: absolute;
+  position: relative;
   left: 150px;
   top: 190px;
 }
 .download__container {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

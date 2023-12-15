@@ -1,5 +1,5 @@
 .hero {
-  background-color: $black;
+  background-image: url("../../img/Background.png");
   padding: 200px 0 228px;
   position: relative;
   .container {
@@ -13,7 +13,7 @@
   &__img {
     position: absolute;
     left: 42%;
-    top: -20px;
+    bottom: 0;
     z-index: 1;
   }
   &__gradient {
