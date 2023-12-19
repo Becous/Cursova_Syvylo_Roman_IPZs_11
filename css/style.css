@@ -169,6 +169,11 @@ img {
   letter-spacing: normal;
   word-wrap: break-word;
 }
+.header__button:focus, .header__button:hover {
+  background-color: #db3009;
+  border-color: #db3009;
+  color: black;
+}
 .header__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,6 +297,12 @@ img {
   word-wrap: break-word;
   text-transform: uppercase;
   margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero__button {
   cursor: pointer;
@@ -309,10 +320,52 @@ img {
   word-wrap: break-word;
   text-transform: capitalize;
 }
+.hero__button:hover, .hero__button:focus {
+  background-color: #db3009;
+}
 
 @media (max-width: 375px) {
   .hero {
     display: none;
+  }
+}
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 147px;
+  background-color: white;
+  margin-left: 8px;
+  -webkit-animation: blink 0.6s linear infinite alternate;
+          animation: blink 0.6s linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .about {
@@ -473,6 +526,9 @@ img {
   word-wrap: break-word;
   text-transform: capitalize;
   margin-bottom: 24px;
+}
+.download__button:hover, .download__button:focus {
+  background-color: #db3009;
 }
 .download__text-box {
   display: -webkit-box;
@@ -950,6 +1006,9 @@ img {
   letter-spacing: normal;
   word-wrap: break-word;
   text-transform: capitalize;
+}
+.form-contact__button:hover, .form-contact__button:focus {
+  background-color: #db3009;
 }
 
 @media (max-width: 375px) {

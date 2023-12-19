@@ -18,4 +18,8 @@
   font-style: normal;
   @include font(white, 12px, $font-montserrat, 600, normal);
   text-transform: capitalize;
+  &:hover,
+  &:focus {
+    background-color: #db3009;
+  }
 }

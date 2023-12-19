@@ -10,6 +10,12 @@
     border: 1px $main-color solid;
     border-radius: 4px;
     @include font($main-color, 12px, $font-montserrat, 600, normal);
+    &:focus,
+    &:hover {
+      background-color: #db3009;
+      border-color: #db3009;
+      color: black;
+    }
   }
   &__body {
     display: flex;
