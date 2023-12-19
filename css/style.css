@@ -134,7 +134,7 @@ img {
   gap: 32px;
   z-index: 2;
 }
-.social__item {
+.social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
