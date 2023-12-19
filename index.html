@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
         <link
@@ -46,7 +47,7 @@
                 <p class="hero__text hero__text-orange">Hello,</p>
                 <p class="hero__text hero__text-white">i'm</p>
               </div>
-              <h1 class="hero__text hero__text-main">Robert Fox</h1>
+              <h1 class="hero__text hero__text-main" id="sentence">R<span id="feature-text"></span><span class="input-cursor"></span></h1>
               <p class="hero__text hero__text-little">Profesional Product designer</p>
             </div>
             <button class="hero__button" type="button">Let's talk</button>
@@ -93,12 +94,12 @@
             <img src="./img/Image (3).jpg" alt="man class="about__expirence-img" width="230" height="257" />
             <div class="about__expirence-box about__expirence-box_left">
               <p class="about__expirence-text">Saticfied<br>Customers</p>
-              <p class="about__expirence-year">25</p>
+              <p class="about__expirence-year" id="number_exp">25</p>
             </div>
           </div>
           <div class="about__expirence">
             <div class="about__expirence-box about__expirence-box_right">
-              <p class="about__expirence-year">8</p>
+              <p class="about__expirence-year" id="number_year">8</p>
               <p class="about__expirence-text">Year <br>of experience</p>             
             </div>
             <img src="./img/Image (4).jpg" alt="laptop" class="about__expirence-img" width="230" height="257" />
@@ -376,7 +377,8 @@
         <p class="footer__text">Copyright <span class="footer__text_white">Roman Syvylo</span> 2023 All Right Reserved</p>
       </div>
     </footer>
-
+    <script src="./js/typer.js"></script>
+    <script src="./js/counter.js"></script>
     <script src="./js/form.js"></script>
   </body>
 
