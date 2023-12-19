@@ -347,24 +347,23 @@
             </ul>
           </address>
           <div class="contact__form-box">
-            <h3 class="contact__form-title">I’m always open to discussing <span class="contact__form-title_orange">product design work</span> or partnership </h3>
-            <hr class="contact__line">
+            <h3 class="contact__form-title contact__line">I’m always open to discussing <span class="contact__form-title_orange">product design work</span> or partnership </h3>
             <form action="" class="form-contact">
               <ul class="form-contact__list">
                 <li class="form-contact__item">
-                  <label for="name" class="form-contact__label">Your name*</label>
+                  <label for="name" class="form-contact__label" id="contact_name">Your name*</label>
                   <input name="name" class="form-contact__input" type="text" required>
                 </li>
                 <li class="form-contact__item">
                   <label for="email" class="form-contact__label">Email Address*</label>
-                  <input name="email" class="form-contact__input" type="email" required>
+                  <input name="email" class="form-contact__input" type="email" id="contact_email" required>
                 </li>
                 <li class="form-contact__item">
                   <label for="message" class="form-contact__label">Message</label>
-                  <textarea name="message" class="form-contact__textarea" type="text"></textarea>
+                  <textarea name="message" class="form-contact__textarea" type="text" id="contact_text"></textarea>
                 </li>
               </ul>
-              <button class="form-contact__button" type="submit">Send message</button>
+              <button class="form-contact__button" type="submit" onclick="sendMessage()">Send message</button>
             </form>
           </div>
         </div>
@@ -377,6 +376,8 @@
         <p class="footer__text">Copyright <span class="footer__text_white">Roman Syvylo</span> 2023 All Right Reserved</p>
       </div>
     </footer>
+
+    <script src="./js/form.js"></script>
   </body>
 
 </html>

@@ -818,8 +818,7 @@ img {
   color: white;
 }
 .contact__line {
-  border-color: #1c1e21;
-  margin: 24px 0 40px 0;
+  border-bottom: 2px solid #1c1e21;
 }
 .address-box {
   margin-right: 94px;
@@ -875,6 +874,7 @@ img {
   letter-spacing: normal;
   word-wrap: break-word;
   white-space: nowrap;
+  padding-bottom: 24px;
 }
 .contact__form-title_orange {
   color: #fe390c;
@@ -887,6 +887,9 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .form-contact__item {
   display: -webkit-box;
@@ -899,7 +902,10 @@ img {
   margin-top: 47px;
 }
 .form-contact__item:first-child {
-  margin-right: 30px;
+  margin-right: 24px;
+}
+.form-contact__item:last-child {
+  width: calc(100% - 35px);
 }
 .form-contact__label {
   color: white;
@@ -923,6 +929,7 @@ img {
   border-radius: 2px;
   color: white;
   border: none;
+  width: 100%;
   height: 124px;
   padding: 16px;
   background: rgba(202, 205, 209, 0.1);
