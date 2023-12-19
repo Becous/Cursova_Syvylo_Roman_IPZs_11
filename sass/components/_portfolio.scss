@@ -52,7 +52,7 @@
       border-radius: 4px;
       border: $main-color 1px solid;
     }
-    &_active {
+    &.active {
       color: $main-color;
       border-radius: 4px;
       border: $main-color 1px solid;
@@ -65,6 +65,7 @@
   gap: 24px;
   margin-top: 40px;
   padding: 0 0 63px;
+  flex-wrap: wrap;
   &__item {
     position: relative;
     &:focus,
@@ -102,4 +103,8 @@
   .portfolio {
     display: none;
   }
+}
+
+.hide {
+  display: none;
 }

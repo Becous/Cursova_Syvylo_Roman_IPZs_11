@@ -31,7 +31,7 @@
               <a class="header__item" href="#">Portfolio</a>
             </div>
           </nav>
-          <button class="header__button" type="button">Contact</button>
+          <button class="header__button" type="button" onclick="scrollToElement('contact')">Contact</button>
         </div>
       </div>
     </header>
@@ -50,7 +50,7 @@
               <h1 class="hero__text hero__text-main" id="sentence">R<span id="feature-text"></span><span class="input-cursor"></span></h1>
               <p class="hero__text hero__text-little">Profesional Product designer</p>
             </div>
-            <button class="hero__button" type="button">Let's talk</button>
+            <button class="hero__button" type="button" data-modal-open>Let's talk</button>
           </div>
           <ul class="social">
               <li class="social__item">
@@ -216,11 +216,11 @@
             <span class="title__number">03</span><h2 class="title__title">Portfolio</h2>
             </div>
             <ul class="filtrated-box__list">
-              <li class="filtrated-box__item"><button class="filtrated-box__button filtrated-box__button_active">All</button></li>
-              <li class="filtrated-box__item"><button class="filtrated-box__button">ui/ux design</button></li>
-              <li class="filtrated-box__item"><button class="filtrated-box__button">PRODUCT DESIGN</button></li>
-              <li class="filtrated-box__item"><button class="filtrated-box__button">BRANDING</button></li>
-              <li class="filtrated-box__item"><button class="filtrated-box__button">WEB DESIGN</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button active" data-name="all">All</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button" data-name="ui">ui/ux design</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button" data-name="prod">PRODUCT DESIGN</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button" data-name="brand">BRANDING</button></li>
+              <li class="filtrated-box__item"><button class="filtrated-box__button" data-name="web">WEB DESIGN</button></li>
             </ul>
             <div class="move-box">
               <button class="move-box__button">
@@ -236,21 +236,63 @@
             </div>
           </div>
           <ul class="image-box">
-            <li class="image-box__item">
+            <li class="image-box__item" data-name="ui">
               <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
               <div class="overlay">
                 <h3 class="overlay__title">MOBILE DESIGN</h3>
                 <p class="overlay__text">UI/UX Design</p>
               </div>
             </li>
-            <li class="image-box__item">
+            <li class="image-box__item"data-name="prod">
               <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
               <div class="overlay">
                 <h3 class="overlay__title">MOBILE DESIGN</h3>
                 <p class="overlay__text">UI/UX Design</p>
               </div>
             </li>
-            <li class="image-box__item">
+            <li class="image-box__item" data-name="ui">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+            <li class="image-box__item" data-name="prod">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+            <li class="image-box__item" data-name="brand">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+            <li class="image-box__item" data-name="web">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+            <li class="image-box__item" data-name="ui">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+            <li class="image-box__item" data-name="ui">
+              <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
+              <div class="overlay">
+                <h3 class="overlay__title">MOBILE DESIGN</h3>
+                <p class="overlay__text">UI/UX Design</p>
+              </div>
+            </li>
+            <li class="image-box__item" data-name="brand">
               <img src="./img/Image (5).jpg" alt="" class="image-box__img" width="364" height="249">
               <div class="overlay">
                 <h3 class="overlay__title">MOBILE DESIGN</h3>
@@ -311,7 +353,7 @@
       </section>
 
       <!-- Contact -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container container__contact">
           <address class="address-box">
             <div class="title">
@@ -377,8 +419,40 @@
         <p class="footer__text">Copyright <span class="footer__text_white">Roman Syvylo</span> 2023 All Right Reserved</p>
       </div>
     </footer>
+
+
+     <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window no-scroll">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="close-button__icon">
+                    <use href="./img/svg/icon.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="form-modal__h2">Contact</h2>
+            <form action="" class="form-contact form-contact_modal">
+              <ul class="form-contact__list form-contact__list_modal">
+                <li class="form-contact__item form-contact__item_modal">
+                  <label for="name_modal" class="form-contact__label form-contact__label_modal" id="contact_name">Your name*</label>
+                  <input name="name_modal" class="form-contact__input form-contact__input_mobile" type="text" requ  ired>
+                </li>
+                <li class="form-contact__item form-contact__item_modal">
+                  <label for="email_modal" class="form-contact__label form-contact__label_modal">Email Address*</label>
+                  <input name="email_modal" class="form-contact__input form-contact__input_mobile" type="email" id="contact_email" required>
+                </li>
+                <li class="form-contact__item form-contact__item_modal">
+                  <label for="message_modal" class="form-contact__label form-contact__label_modal">Message</label>
+                  <textarea name="message_modal" class="form-contact__textarea form-contact__textarea_modal" type="text" id="contact_text"></textarea>
+                </li>
+              </ul>
+              <button class="form-contact__button" type="submit" onclick="sendMessageModal()">Send message</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/slide.js"></script>
     <script src="./js/typer.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/counter.js"></script>
+    <script src="./js/filter.js"></script>
     <script src="./js/form.js"></script>
   </body>
 
