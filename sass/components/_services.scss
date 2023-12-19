@@ -4,7 +4,7 @@
   }
   padding: 300px 0 84px 0;
   &__list {
-    padding-top: 57px;
+    margin-top: 57px;
     display: flex;
     gap: 61px;
   }
@@ -42,7 +42,7 @@
     font-size: 16px;
     font-family: $font-montserrat;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 187.5%;
     letter-spacing: -0.64px;
     word-wrap: break-word;
     font-style: normal;
@@ -50,7 +50,7 @@
 
   &__text {
     margin-top: 8px;
-    @include font($grey, 14px, $font-montserrat, 500, -0.28px, 24px);
+    @include font($grey, 14px, $font-montserrat, 500, -0.28px, 171.429%);
     font-style: normal;
   }
 }

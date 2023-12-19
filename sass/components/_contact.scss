@@ -1,4 +1,7 @@
 .contact {
+  background-image: url("../img/Bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   padding: 56px 0 51px 0;
   background-color: $black;
   color: white;
@@ -60,9 +63,9 @@
   &__item {
     display: flex;
     flex-direction: column;
+    margin-top: 47px;
     &:first-child {
       margin-right: 30px;
-      margin-bottom: 47px;
     }
   }
 
@@ -82,7 +85,6 @@
     border-radius: 2px;
     color: white;
     border: none;
-    width: 710px;
     height: 124px;
     padding: 16px;
     background: rgba(202, 205, 209, 0.1);

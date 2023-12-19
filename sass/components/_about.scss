@@ -32,11 +32,11 @@
   }
 
   &__expirence-text {
-    @include font($black, 14px, $font-montserrat, 600, -0.56px, 20px);
+    @include font($black, 14px, $font-montserrat, 600, -0.56px, 142.857%);
   }
 
   &__text {
-    @include font($grey, 14px, $font-montserrat, 500, 1.6px, 32px);
+    @include font($grey, 14px, $font-montserrat, 500, 1.6px, 228.571%);
     padding-left: 92px;
     &:not(:first-child) {
       margin-top: 15px;

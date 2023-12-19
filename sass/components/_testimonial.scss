@@ -1,7 +1,7 @@
 .testimonial {
   padding: 120px 0;
   &__content {
-    padding-left: 121px;
+    margin-left: 121px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,18 +50,18 @@
     margin-bottom: 23.84px;
   }
   &__text {
-    @include font($black, 14px, $font-montserrat, 500, -0.28px, 32px);
+    @include font($black, 14px, $font-montserrat, 500, -0.28px, 228.571%);
 
     margin-bottom: 31px;
   }
 
   &__author {
-    @include font(var(--1, $main-color), 16px, $font-montserrat, 700, -0.64px, 30px);
+    @include font(var(--1, $main-color), 16px, $font-montserrat, 700, -0.64px, 187.5%);
   }
 
   &__author-position {
     margin-top: 12px;
-    @include font($grey, 14px, $font-montserrat, 600, -0.56px, 20px);
+    @include font($grey, 14px, $font-montserrat, 600, -0.56px, 142.857%);
   }
 
   &__slider {

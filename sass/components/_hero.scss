@@ -36,7 +36,7 @@
   }
 
   &__text {
-    @include font(white, 24px, $font-montserrat, 700, -0.96px, 30px);
+    @include font(white, 24px, $font-montserrat, 700, -0.96px, 125%);
     &-orange {
       color: $main-color;
     }
@@ -47,7 +47,7 @@
 
     &-main {
       font-style: normal;
-      @include font(white, 130px, $font-anton, 400, 1.95px, 154px);
+      @include font(white, 130px, $font-anton, 400, 1.95px, 118.462%);
       text-transform: uppercase;
       margin-bottom: 12px;
     }

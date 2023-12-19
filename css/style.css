@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .container {
   max-width: 1140px;
-  padding: 0 150px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .container__testimonial {
@@ -270,7 +270,7 @@ img {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 125%;
   letter-spacing: -0.96px;
   word-wrap: break-word;
 }
@@ -287,7 +287,7 @@ img {
   font-size: 130px;
   font-family: "Anton", fantasy;
   font-weight: 400;
-  line-height: 154px;
+  line-height: 118.462%;
   letter-spacing: 1.95px;
   word-wrap: break-word;
   text-transform: uppercase;
@@ -366,7 +366,7 @@ img {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 142.857%;
   letter-spacing: -0.56px;
   word-wrap: break-word;
 }
@@ -375,7 +375,7 @@ img {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 228.571%;
   letter-spacing: 1.6px;
   word-wrap: break-word;
   padding-left: 92px;
@@ -424,22 +424,20 @@ img {
 }
 .download {
   position: relative;
-  left: 150px;
-  top: 190px;
 }
 .download__container {
+  background-image: url("../img/bgd.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   position: absolute;
-  top: -350px;
-  left: 0;
+  top: -150px;
+  left: calc(100vh - 48%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -490,7 +488,7 @@ img {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 142.857%;
   letter-spacing: -0.56px;
   word-wrap: break-word;
 }
@@ -504,7 +502,7 @@ img {
           justify-content: center;
 }
 .service__list {
-  padding-top: 57px;
+  margin-top: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,7 +543,7 @@ img {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 187.5%;
   letter-spacing: -0.64px;
   word-wrap: break-word;
   font-style: normal;
@@ -556,7 +554,7 @@ img {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 171.429%;
   letter-spacing: -0.28px;
   word-wrap: break-word;
   font-style: normal;
@@ -653,7 +651,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 24px;
-  padding: 40px 0 63px;
+  margin-top: 40px;
+  padding: 0 0 63px;
 }
 .image-box__item {
   position: relative;
@@ -699,7 +698,7 @@ img {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 187.5%;
   letter-spacing: -0.64px;
   word-wrap: break-word;
 }
@@ -713,7 +712,7 @@ img {
   padding: 120px 0;
 }
 .testimonial__content {
-  padding-left: 121px;
+  margin-left: 121px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,7 +780,7 @@ img {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 228.571%;
   letter-spacing: -0.28px;
   word-wrap: break-word;
   margin-bottom: 31px;
@@ -791,7 +790,7 @@ img {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 187.5%;
   letter-spacing: -0.64px;
   word-wrap: break-word;
 }
@@ -801,7 +800,7 @@ img {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 142.857%;
   letter-spacing: -0.56px;
   word-wrap: break-word;
 }
@@ -811,6 +810,9 @@ img {
   }
 }
 .contact {
+  background-image: url("../img/Bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   padding: 56px 0 51px 0;
   background-color: #111214;
   color: white;
@@ -894,10 +896,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 47px;
 }
 .form-contact__item:first-child {
   margin-right: 30px;
-  margin-bottom: 47px;
 }
 .form-contact__label {
   color: white;
@@ -921,7 +923,6 @@ img {
   border-radius: 2px;
   color: white;
   border: none;
-  width: 710px;
   height: 124px;
   padding: 16px;
   background: rgba(202, 205, 209, 0.1);
@@ -964,7 +965,7 @@ img {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 200%;
   letter-spacing: -0.56px;
   word-wrap: break-word;
 }

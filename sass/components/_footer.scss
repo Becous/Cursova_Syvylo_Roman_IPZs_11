@@ -5,7 +5,7 @@
   justify-content: center;
 
   &__text {
-    @include font($grey, 14px, $font-montserrat, 600, -0.56px, 28px);
+    @include font($grey, 14px, $font-montserrat, 600, -0.56px, 200%);
     &_white {
       color: white;
     }

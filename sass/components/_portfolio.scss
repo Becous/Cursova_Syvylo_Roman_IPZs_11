@@ -63,7 +63,8 @@
   cursor: pointer;
   display: flex;
   gap: 24px;
-  padding: 40px 0 63px;
+  margin-top: 40px;
+  padding: 0 0 63px;
   &__item {
     position: relative;
     &:focus,
@@ -93,7 +94,7 @@
   }
 
   &__text {
-    @include font(white, 16px, $font-montserrat, 700, -0.64px, 30px);
+    @include font(white, 16px, $font-montserrat, 700, -0.64px, 187.5%);
   }
 }
 
