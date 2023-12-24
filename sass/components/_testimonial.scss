@@ -25,8 +25,6 @@
   &__count {
     color: $main-color;
   }
-  &_slider {
-  }
 
   &_slider-item {
     cursor: pointer;
@@ -68,13 +66,5 @@
   &__author-position {
     margin-top: 12px;
     @include font($grey, 14px, $font-montserrat, 600, -0.56px, 142.857%);
-  }
-
-  &__slider {
-  }
-
-  &__slider-item {
-    &_active {
-    }
   }
 }

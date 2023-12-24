@@ -5,12 +5,6 @@
   padding: 56px 0 51px 0;
   background-color: $black;
   color: white;
-  @include tablet {
-    display: none;
-  }
-  @include mobile {
-    display: none;
-  }
   &__line {
     border-bottom: 2px solid #1c1e21;
   }
@@ -49,6 +43,19 @@
     @include font(white, 24px, $font-anton, 400, normal);
     white-space: nowrap;
     padding-bottom: 24px;
+
+    @include tablet {
+      margin-top: 47px;
+      white-space: normal;
+      display: inline-flex;
+      flex-direction: row;
+      gap: 6px;
+    }
+    @include mobile {
+      font-size: 20px;
+      margin-top: 47px;
+      white-space: normal;
+    }
     &_orange {
       color: $main-color;
     }
@@ -99,11 +106,5 @@
 
   &__button {
     @include button;
-  }
-}
-
-@media (max-width: 375px) {
-  .contact {
-    display: none;
   }
 }

@@ -7,16 +7,11 @@
   }
   &__contact {
     display: flex;
-  }
-}
-
-.header {
-  &__container {
-  }
-}
-@media (max-width: 375px) {
-  .container {
-    max-width: 100%;
-    padding: 0 16px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+    }
   }
 }
