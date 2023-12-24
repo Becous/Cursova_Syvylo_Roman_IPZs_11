@@ -1,10 +1,25 @@
 .portfolio {
   padding: 73px 0;
   background-color: $grey10;
+  @include tablet {
+  }
+  @include mobile {
+  }
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: start;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: start;
+      align-self: start;
+    }
   }
   &__slider {
     display: flex;
@@ -34,6 +49,14 @@
   &__list {
     display: flex;
     gap: 24px;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
   }
   &__button {
     cursor: pointer;
@@ -45,7 +68,7 @@
     border: transparent 1px solid;
     transition: border 0.5s, color 0.5s;
 
-    padding: 16px;
+    padding: 12px 16px;
     &:focus,
     &:hover {
       color: $main-color;
@@ -66,6 +89,14 @@
   margin-top: 40px;
   padding: 0 0 63px;
   flex-wrap: wrap;
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+  }
+  @include mobile {
+    justify-content: center;
+    align-items: center;
+  }
   &__item {
     position: relative;
     &:focus,
@@ -96,12 +127,6 @@
 
   &__text {
     @include font(white, 16px, $font-montserrat, 700, -0.64px, 187.5%);
-  }
-}
-
-@media (max-width: 375px) {
-  .portfolio {
-    display: none;
   }
 }
 

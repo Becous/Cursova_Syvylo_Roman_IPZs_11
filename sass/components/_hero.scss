@@ -2,6 +2,8 @@
   background-image: url("../img/Background.png");
   padding: 200px 0 228px;
   position: relative;
+  overflow: hidden;
+
   .container {
     display: flex;
     align-items: center;
@@ -37,6 +39,12 @@
 
   &__text {
     @include font(white, 24px, $font-montserrat, 700, -0.96px, 125%);
+    @include tablet {
+      font-size: 24px;
+    }
+    @include mobile {
+      font-size: 24px;
+    }
     &-orange {
       color: $main-color;
     }
@@ -52,16 +60,17 @@
       margin-bottom: 12px;
       display: flex;
       align-items: center;
+      @include tablet {
+        font-size: 58px;
+      }
+      @include mobile {
+        font-size: 58px;
+      }
     }
   }
 
   &__button {
     @include button;
-  }
-}
-@media (max-width: 375px) {
-  .hero {
-    display: none;
   }
 }
 
@@ -72,6 +81,12 @@
   background-color: white;
   margin-left: 8px;
   animation: blink 0.6s linear infinite alternate;
+  @include tablet {
+    height: 73px;
+  }
+  @include mobile {
+    height: 73px;
+  }
 }
 @keyframes blink {
   0% {

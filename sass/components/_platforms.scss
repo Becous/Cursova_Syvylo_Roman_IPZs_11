@@ -1,11 +1,25 @@
 .platforms {
   background-color: $grey10;
   padding: 92px 0 190px 0;
+  @include tablet {
+    padding: 40px 0 169px 0;
+  }
+  @include mobile {
+    padding: 40px 0 169px 0;
+  }
   &__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 90px;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
   &__icon {
     cursor: pointer;
@@ -14,11 +28,5 @@
     &:focus {
       filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3));
     }
-  }
-}
-
-@media (max-width: 375px) {
-  .platforms {
-    display: none;
   }
 }

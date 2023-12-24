@@ -1,5 +1,11 @@
 .testimonial {
   padding: 120px 0;
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
   &__content {
     margin-left: 121px;
     display: flex;
@@ -70,11 +76,5 @@
   &__slider-item {
     &_active {
     }
-  }
-}
-
-@media (max-width: 375px) {
-  .testimonial {
-    display: none;
   }
 }

@@ -1,6 +1,11 @@
 .download {
   position: relative;
-
+  // @include tablet {
+  //   display: none;
+  // }
+  // @include mobile {
+  //   display: none;
+  // }
   &__container {
     width: max-content;
     background-image: url("../img/bgd.jpg");
@@ -16,11 +21,30 @@
     background-color: $black;
     padding: 73px 214px 79px 245px;
     border-radius: 2px;
+    @include tablet {
+      padding: 51px 79px 50px 80px;
+      max-width: 550px;
+      align-items: center;
+      text-align: center;
+    }
+    @include mobile {
+      padding: 51px 79px 50px 80px;
+      max-width: 200px;
+      align-items: center;
+      text-align: center;
+    }
   }
   &__title {
     @include font(white, 40px, $font-anton, 400, 0.8px);
     text-transform: capitalize;
     margin-bottom: 32px;
+    @include tablet {
+      font-size: 32px;
+    }
+    @include mobile {
+      white-space: pre-line;
+      font-size: 32px;
+    }
   }
 
   &__button {
@@ -35,5 +59,8 @@
   }
   &__text {
     @include font($grey, 14px, $font-montserrat, 600, -0.56px, 142.857%);
+    @include mobile {
+      font-size: 12px;
+    }
   }
 }

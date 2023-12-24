@@ -3,9 +3,39 @@
   padding: 90px 0 86px 0;
   position: relative;
   z-index: 3;
+
+  @include tablet {
+    padding: 44px 0 47px;
+  }
+  @include mobile {
+    padding: 44px 0 47px;
+  }
   &__container {
     display: flex;
     gap: 63px;
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 0;
+    }
+  }
+  &__expirence {
+    @include mobile {
+      &.right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+      &.left {
+        margin-bottom: 67px;
+      }
+    }
   }
   &__expirence-box {
     display: flex;
@@ -40,17 +70,6 @@
     padding-left: 92px;
     &:not(:first-child) {
       margin-top: 15px;
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .about {
-    & .container {
-      flex-wrap: wrap;
-    }
-    &__text {
-      padding-left: 76px;
     }
   }
 }
