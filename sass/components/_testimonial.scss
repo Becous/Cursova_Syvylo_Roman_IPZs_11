@@ -1,4 +1,5 @@
 .testimonial {
+  position: relative;
   padding: 120px 0;
   @include tablet {
     display: none;
@@ -19,6 +20,11 @@
   }
 
   &__nav-text {
+    position: absolute;
+    z-index: 3;
+    top: 167px;
+    right: 150px;
+    background-color: white;
     @include font($light-grey, 24px, $font-anton, 400, normal);
   }
 
@@ -66,5 +72,53 @@
   &__author-position {
     margin-top: 12px;
     @include font($grey, 14px, $font-montserrat, 600, -0.56px, 142.857%);
+  }
+}
+
+.swiper {
+  max-width: 1140px;
+  height: auto;
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    height: 3px;
+    border-radius: 3px;
+    width: 53px;
+    border: none;
+    &-active {
+      cursor: pointer;
+      height: 3px;
+      border-radius: 3px;
+      width: 53px;
+      border: none;
+      background-color: $main-color;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  gap: 121px;
+  align-items: center;
+  justify-content: center;
+  .quote-box {
+  }
+}
+
+.move-box {
+  position: absolute;
+  bottom: 120px;
+  right: 150px;
+  display: flex;
+  gap: 24px;
+  &__button {
+    padding: 10px;
+    border-radius: 2px;
+    background-color: $main-color;
+    border: none;
+  }
+  &__icon {
+    &_right {
+      transform: rotate(180deg);
+    }
   }
 }

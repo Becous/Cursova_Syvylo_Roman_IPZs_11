@@ -2,14 +2,14 @@
   width: 100%;
   background-color: $black;
   padding: 25px 0 0;
-  @include tablet {
-    display: none;
-  }
-  @include mobile {
-    display: none;
-  }
 
   &__button {
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
     cursor: pointer;
     padding: 12px 16px;
     background-color: transparent;
@@ -30,9 +30,12 @@
   }
   &__menu {
     align-self: center;
-  }
-  &__burger {
-    display: none;
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
   }
   &__list {
     display: flex;
