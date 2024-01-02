@@ -2,30 +2,37 @@
   position: relative;
   padding: 120px 0;
   @include tablet {
-    display: none;
+    padding: 184px 0 120px;
   }
   @include mobile {
-    display: none;
+    padding: 184px 0 120px;
   }
-  &__content {
-    margin-left: 121px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  &__img {
+    background-size: cover;
+    width: 341px;
+    height: 386px;
+    object-fit: contain;
   }
 
   &__nav-text {
     position: absolute;
     z-index: 3;
-    top: 167px;
-    right: 150px;
+
     background-color: white;
     @include font($light-grey, 24px, $font-anton, 400, normal);
+    @include destop {
+      top: 0;
+      right: 0;
+    }
+    @include tablet {
+      bottom: 40%;
+      left: 0;
+    }
+    @include mobile {
+      bottom: 40%;
+      left: 0;
+    }
   }
 
   &__count {
@@ -78,6 +85,14 @@
 .swiper {
   max-width: 1140px;
   height: auto;
+  @include tablet {
+    padding-bottom: 60px;
+    max-width: 80%;
+  }
+  @include mobile {
+    padding-bottom: 60px;
+    max-width: 80%;
+  }
   .swiper-pagination-bullet {
     cursor: pointer;
     height: 3px;
@@ -100,16 +115,28 @@
   gap: 121px;
   align-items: center;
   justify-content: center;
-  .quote-box {
+  z-index: 50;
+  @include tablet {
+    flex-direction: column;
+  }
+  @include mobile {
+    flex-direction: column;
   }
 }
 
 .move-box {
   position: absolute;
-  bottom: 120px;
-  right: 150px;
+  bottom: 0;
+  right: 0;
   display: flex;
   gap: 24px;
+  z-index: 10;
+  @include tablet {
+    bottom: 65px;
+  }
+  @include mobile {
+    bottom: 65px;
+  }
   &__button {
     padding: 10px;
     border-radius: 2px;

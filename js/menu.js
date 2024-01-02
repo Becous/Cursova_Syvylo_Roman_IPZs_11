@@ -15,7 +15,6 @@ function toggleMenu() {
     body.classList.add("no-scroll");
     closeIcon.style.display = "block";
     closeIcon.style.position = "fixed";
-    closeIcon.style.right = "0";
     menuIcon.style.display = "none";
   }
 }

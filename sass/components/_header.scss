@@ -1,7 +1,11 @@
 .header {
   width: 100%;
-  background-color: $black;
   padding: 25px 0 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 70;
 
   &__button {
     @include mobile {

@@ -20,18 +20,25 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  @media (max-width: 900px) {
+  @include mobile {
+    display: block;
+  }
+  @include tablet {
     display: block;
   }
 }
 
 .closeIcon {
   display: none;
+  right: 15px;
+  top: 25px;
 }
 
 .menu {
+  // display: none;
+  height: 100vh;
   position: fixed;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   transition: transform 0.2s;
   top: 0;
   left: 0;
@@ -45,7 +52,7 @@
 }
 
 .showMenu {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .menuIcon,
@@ -77,4 +84,8 @@
     border-color: #db3009;
     color: black;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }

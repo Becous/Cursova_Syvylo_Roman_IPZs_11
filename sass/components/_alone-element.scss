@@ -19,9 +19,19 @@
   &__testimonial {
     position: absolute;
     top: 120px;
-    right: 502px;
+    right: 34%;
     z-index: 3;
     background-color: white;
+    @include tablet {
+      top: 64px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    @include mobile {
+      top: 64px;
+      right: 50%;
+      transform: translateX(50%);
+    }
   }
   &__number {
     @include font($main-color, 80px, $font-anton, 400, 0.8px);

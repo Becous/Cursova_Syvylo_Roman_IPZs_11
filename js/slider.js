@@ -4,17 +4,18 @@ let swiper = new Swiper(".swiper", {
   autoplay: {
     delay: 3000,
   },
-  nextButton: ".move-box__button-left",
-  prevButton: ".move-box__button-right",
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: ".move-box__button-right",
+    prevEl: ".move-box__button-left",
+  },
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+    position: "right",
   },
 });
 
