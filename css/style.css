@@ -1604,6 +1604,16 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .modal-window {
+    min-width: 350px;
+  }
+}
+@media screen and (max-width: 767.9px) and (min-width: 0) {
+  .modal-window {
+    min-width: 350px;
+  }
+}
 
 .close-button {
   display: -webkit-box;
@@ -1624,16 +1634,21 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+.close-button:hover, .close-button:focus {
+  border: 1px #fe390c solid;
 }
 .close-button__icon {
   width: 18px;
   height: 18px;
-  fill: white;
-  -webkit-transition: fill 0.5s;
-  transition: fill 0.5s;
+  color: white;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
-.close-button:hover .close-button__icon, .close-button:focus .close-button__icon {
-  fill: #fe390c;
+.close-button__icon:hover, .close-button__icon:focus {
+  color: #fe390c;
 }
 
 .form-modal {
