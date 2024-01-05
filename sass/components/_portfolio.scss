@@ -1,0 +1,155 @@
+.portfolio {
+  padding: 73px 0;
+  background-color: $grey10;
+  @include tablet {
+  }
+  @include mobile {
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: start;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: start;
+      align-self: start;
+    }
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  &__slider-button {
+    cursor: pointer;
+    height: 3px;
+    border-radius: 3px;
+    width: 53px;
+    border: none;
+    background-color: #e0e0e0;
+    transition: background-color 0.5s;
+    &:focus,
+    &:hover {
+      background-color: $main-color;
+    }
+    &_active {
+      background-color: $main-color;
+    }
+  }
+}
+.filtrated-box {
+  &__list {
+    display: flex;
+    gap: 24px;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+  &__button {
+    cursor: pointer;
+    display: block;
+    @include font($grey, 12px, $font-montserrat, 600, normal);
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: transparent;
+    border: transparent 1px solid;
+    transition: border 0.5s, color 0.5s;
+
+    padding: 12px 16px;
+    &:focus,
+    &:hover {
+      color: $main-color;
+      border-radius: 4px;
+      border: $main-color 1px solid;
+    }
+    &.active {
+      color: $main-color;
+      border-radius: 4px;
+      border: $main-color 1px solid;
+    }
+  }
+}
+.image-box {
+  cursor: pointer;
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+  padding: 0 0 63px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+  }
+  @include mobile {
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    object-fit: cover;
+    @include tablet {
+      width: 100%;
+      height: 234px;
+    }
+    @include mobile {
+      width: 100%;
+      height: 234px;
+    }
+  }
+  &__item {
+    position: relative;
+    @include tablet {
+      max-width: 324px;
+      height: auto;
+    }
+    @include mobile {
+      max-width: 324px;
+      height: auto;
+    }
+    &:focus,
+    &:hover {
+      & .overlay {
+        opacity: 100%;
+      }
+    }
+  }
+}
+.overlay {
+  opacity: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000096;
+  transition: opacity 0.5s;
+  &__title {
+    @include font(white, 32px, $font-anton, 400, normal);
+    text-transform: capitalize;
+  }
+
+  &__text {
+    @include font(white, 16px, $font-montserrat, 700, -0.64px, 187.5%);
+  }
+}
+
+.hide {
+  display: none;
+}

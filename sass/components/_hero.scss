@@ -1,0 +1,104 @@
+.hero {
+  background-image: url("../img/Background.png");
+  padding: 300px 0 228px;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    z-index: 2;
+  }
+  &__img {
+    position: absolute;
+    left: 42%;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__gradient {
+    position: absolute;
+    width: calc(100% - 250px);
+    height: 191px;
+    background: linear-gradient(232deg, #111214 35.95%, #111214 57.97%);
+    filter: blur(47.5px);
+    z-index: 2;
+    top: 85%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__items {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    @include font(white, 24px, $font-montserrat, 700, -0.96px, 125%);
+    @include tablet {
+      font-size: 24px;
+    }
+    @include mobile {
+      font-size: 24px;
+    }
+    &-orange {
+      color: $main-color;
+    }
+    &-little {
+      letter-spacing: -0.64px;
+      margin-bottom: 24px;
+    }
+
+    &-main {
+      font-style: normal;
+      @include font(white, 130px, $font-anton, 400, 1.95px, 118.462%);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      @include tablet {
+        font-size: 58px;
+      }
+      @include mobile {
+        font-size: 58px;
+      }
+    }
+  }
+
+  &__button {
+    @include button;
+  }
+}
+
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 147px;
+  background-color: white;
+  margin-left: 8px;
+  animation: blink 0.6s linear infinite alternate;
+  @include tablet {
+    height: 73px;
+  }
+  @include mobile {
+    height: 73px;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,151 @@
+.testimonial {
+  position: relative;
+  padding: 120px 0;
+  @include tablet {
+    padding: 184px 0 120px;
+  }
+  @include mobile {
+    padding: 184px 0 120px;
+  }
+
+  &__img {
+    background-size: cover;
+    width: 341px;
+    height: 386px;
+    object-fit: contain;
+  }
+
+  &__nav-text {
+    position: absolute;
+    z-index: 3;
+
+    background-color: white;
+    @include font($light-grey, 24px, $font-anton, 400, normal);
+    @include destop {
+      top: 0;
+      right: 0;
+    }
+    @include tablet {
+      bottom: 40%;
+      left: 0;
+    }
+    @include mobile {
+      bottom: 40%;
+      left: 0;
+    }
+  }
+
+  &__count {
+    color: $main-color;
+  }
+
+  &_slider-item {
+    cursor: pointer;
+    height: 3px;
+    border-radius: 3px;
+    width: 53px;
+    border: none;
+    background-color: #e0e0e0;
+    transition: background-color 0.5s;
+    &:focus,
+    &:hover {
+      background-color: $main-color;
+    }
+    &_active {
+      background-color: $main-color;
+    }
+  }
+
+  &__slider-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.quote-box {
+  &__icon {
+    margin-bottom: 23.84px;
+  }
+  &__text {
+    @include font($black, 14px, $font-montserrat, 500, -0.28px, 228.571%);
+
+    margin-bottom: 31px;
+  }
+
+  &__author {
+    @include font(var(--1, $main-color), 16px, $font-montserrat, 700, -0.64px, 187.5%);
+  }
+
+  &__author-position {
+    margin-top: 12px;
+    @include font($grey, 14px, $font-montserrat, 600, -0.56px, 142.857%);
+  }
+}
+
+.swiper {
+  max-width: 1140px;
+  height: auto;
+  @include tablet {
+    padding-bottom: 60px;
+    max-width: 80%;
+  }
+  @include mobile {
+    padding-bottom: 60px;
+    max-width: 80%;
+  }
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    height: 3px;
+    border-radius: 3px;
+    width: 53px;
+    border: none;
+    &-active {
+      cursor: pointer;
+      height: 3px;
+      border-radius: 3px;
+      width: 53px;
+      border: none;
+      background-color: $main-color;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  gap: 121px;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  @include tablet {
+    flex-direction: column;
+  }
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.move-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  gap: 24px;
+  z-index: 10;
+  @include tablet {
+    bottom: 65px;
+  }
+  @include mobile {
+    bottom: 65px;
+  }
+  &__button {
+    padding: 10px;
+    border-radius: 2px;
+    background-color: $main-color;
+    border: none;
+  }
+  &__icon {
+    &_right {
+      transform: rotate(180deg);
+    }
+  }
+}

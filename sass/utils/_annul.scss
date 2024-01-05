@@ -1,0 +1,35 @@
+a,
+ul,
+body,
+h1,
+h3,
+h2,
+p,
+li,
+svg,
+button,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+a,
+address {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
